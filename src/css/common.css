@@ -16,3 +16,8 @@ img {
   display: block;
   max-width: 100%;
 }
+.timer{align-items: center;
+  display: flex;}
+
+  .field{margin-right: 25px;
+  font-size: 25px;}
