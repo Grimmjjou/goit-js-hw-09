@@ -21,16 +21,17 @@ function onSubmitForm(evt){
   });
     }
   }
+  evt.currentTarget.reset();
 }
-evt.currentTarget.reset();
+
 
 function createPromise(position, delay) {
   return new Promise((res,rey)=>{
     const shouldResolve = Math.random() > 0.3;
     setTimeout(()=>{  if (shouldResolve) {
-      res({ position, delay })
+      res({ position, delay });
     } else {
-      rej({ position, delay });
+      rey({ position, delay });
     }},delay)})
   
   
